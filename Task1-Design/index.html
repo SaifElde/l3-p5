@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="Style/style.css" />
+    <title>Cup Mart | Coffee Shop</title>
+  </head>
+  <body>
+    <!-- Main navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="gg-coffee"></i>
+          Cup Mart
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#Menu"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#Signature Coffee"
+                    >Signature Coffee</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#Hot Beverages"
+                    >Hot Beverages</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#Cold Beverages"
+                    >Cold Beverages</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider ms-3 me-3" /></li>
+                <li>
+                  <a class="dropdown-item" href="#Fresh Bakery">Fresh Bakery</a>
+                </li>
+                <li><hr class="dropdown-divider ms-3 me-3" /></li>
+                <li>
+                  <a class="dropdown-item" href="#Best Sellers"
+                    >Best Sellers 🎖️</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Customer Reviews">Customer Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact Us">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <span class="input-group-text"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </span>
+              <input
+                class="form-control me-2 fs-10"
+                type="search"
+                placeholder="Find drinks & bakery..."
+                aria-label="Search"
+              />
+              <a href="#Menu" class="btn search-btn">Search</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section with the main welcome message -->
+    <section class="hero-section">
+      <div class="hero-over container text-center text-white" id="hero">
+        <h1 class="header1">More Than Just Coffee</h1>
+        <p class="hero-paragraph">
+          Discover a place where quality, passion, and craftsmanship come
+          together to create extraordinary coffee and unforgettable moments.
+        </p>
+        <a href="#Menu" class="btn hero-btn btn-lg"> Explore Menu </a>
+      </div>
+    </section>
+
+    <!-- Why customers choose Cup Mart -->
+    <section class="whyus">
+      <div class="container">
+        <h2>Why Shop With Us</h2>
+        <div class="whyus-container">
+          <!-- Feature card: Premium Beans -->
+          <div class="card shadow-sm rounded-4 p-3 whyus-card hover-whyus-card">
+            <div class="card-body text-center">
+              <h5 class="whyus-card-title">Premium Beans</h5>
+              <p class="whyus-card-text">
+                Freshly roasted coffee beans selected from the world's finest
+                farms.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature card: Fast Delivery -->
+          <div class="card shadow-sm rounded-4 p-3 whyus-card hover-whyus-card">
+            <div class="card-body text-center">
+              <h5 class="whyus-card-title">Fast Delivery</h5>
+              <p class="whyus-card-text">
+                Enjoy fresh coffee delivered quickly right to your doorstep.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature card: Best Quality -->
+          <div class="card shadow-sm rounded-4 p-3 whyus-card hover-whyus-card">
+            <div class="card-body text-center">
+              <h5 class="whyus-card-title">Best Quality</h5>
+              <p class="whyus-card-text">
+                Premium ingredients at affordable prices with exceptional taste.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu navigation section -->
+    <section class="our_menu">
+      <div class="container" id="Menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+          <a
+            href="#Signature Coffee"
+            class="btn menu-btn menu-btn-hover"
+            aria-disabled="true"
+            >Signature Coffee ⭐</a
+          >
+          <a
+            href="#Hot Beverages"
+            class="btn menu-btn menu-btn-hover"
+            aria-disabled="true"
+            >Hot Beverages 🔥</a
+          >
+          <a
+            href="#Cold Beverages"
+            class="btn menu-btn menu-btn-hover"
+            aria-disabled="true"
+            >Cold Beverages ❄️</a
+          >
+          <a
+            href="#Fresh Bakery"
+            class="btn menu-btn menu-btn-hover"
+            aria-disabled="true"
+            >Fresh Bakery 🥐</a
+          >
+          <a
+            href="#Best Sellers"
+            class="btn menu-btn menu-btn-hover"
+            aria-disabled="true"
+            >Best Sellers 🎖️</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature coffee collection -->
+    <section class="featured-products">
+      <div class="container" id="Signature Coffee">
+        <h2>Signature Coffee ⭐</h2>
+
+        <div class="featured-products-container">
+          <!-- Product card: Midnight Velvet -->
+          <div class="card featured-products-card hover-featured-products-card">
+            <span class="badge bg-Premium">PREMIUM</span>
+            <img
+              src="images/midnight-velvet.png"
+              class="card-img-top"
+              alt="Midnight Velvet"
+            />
+            <div class="card-body">
+              <h5 class="featured-products-card-title">Midnight Velvet</h5>
+              <h6 class="card-price">200 EGP</h6>
+              <p class="featured-products-card-text">
+                Bold espresso with a smooth, rich finish and velvety texture
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Vanilla Dream Latte -->
+          <div class="card featured-products-card hover-featured-products-card">
+            <span class="badge bg-New">NEW</span>
+            <img
+              src="images/vanilla.png"
+              class="card-img-top"
+              alt="Vanilla Dream Latte"
+            />
+            <div class="card-body">
+              <h5 class="featured-products-card-title">Vanilla Dream Latte</h5>
+              <h6 class="card-price">160 EGP</h6>
+              <p class="featured-products-card-text">
+                Creamy latte infused with natural vanilla flavor
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Cinnamon Honey Latte -->
+          <div class="card featured-products-card hover-featured-products-card">
+            <span class="badge bg-limited">LIMITED</span>
+            <img
+              src="images/honey.png"
+              class="card-img-top"
+              alt="Cinnamon Honey Latte"
+            />
+            <div class="card-body">
+              <h5 class="featured-products-card-title">Cinnamon Honey Latte</h5>
+              <h6 class="card-price">130 EGP</h6>
+              <p class="featured-products-card-text">
+                A comforting blend of espresso, honey, and cinnamon
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Caramel Velvet Coffee -->
+          <div class="card featured-products-card hover-featured-products-card">
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img
+              src="images/caramel.png"
+              class="card-img-top"
+              alt="Caramel Velvet Coffee"
+            />
+            <div class="card-body">
+              <h5 class="featured-products-card-title">
+                Caramel Velvet Coffee
+              </h5>
+              <h6 class="card-price">140 EGP</h6>
+              <p class="featured-products-card-text">
+                Rich caramel coffee topped with silky milk foam
+              </p>
+              <a href="#caramel-velvet" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hot beverage options -->
+    <section class="hot-bever">
+      <div class="container" id="Hot Beverages">
+        <h2>Hot Beverages 🔥</h2>
+
+        <div class="hot-bever-container">
+          <!-- Product card: Espresso -->
+          <div class="card hot-bever-card hover-hot-bever-card">
+            <img
+              src="images/espresso.png"
+              class="card-img-top"
+              alt="Espresso"
+            />
+            <div class="card-body">
+              <h5 class="hot-bever-card-title">Espresso</h5>
+              <h6 class="card-price">80 EGP</h6>
+              <p class="hot-bever-card-text">
+                Strong, concentrated coffee with a rich crema
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Americano -->
+          <div class="card hot-bever-card hover-hot-bever-card">
+            <img
+              src="images/Americano.png"
+              class="card-img-top"
+              alt="Americano"
+            />
+            <div class="card-body">
+              <h5 class="hot-bever-card-title">Americano</h5>
+              <h6 class="card-price">120 EGP</h6>
+              <p class="hot-bever-card-text">
+                Espresso diluted with hot water for a smooth, bold taste
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Cappuccino -->
+          <div class="card hot-bever-card hover-hot-bever-card">
+            <img
+              src="images/cappuccino.png"
+              class="card-img-top"
+              alt="Cappuccino"
+            />
+            <div class="card-body">
+              <h5 class="hot-bever-card-title">Cappuccino</h5>
+              <h6 class="card-price">140 EGP</h6>
+              <p class="hot-bever-card-text">
+                Espresso topped with steamed milk and thick milk foam
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Latte -->
+          <div class="card hot-bever-card hover-hot-bever-card">
+            <img src="images/latte.png" class="card-img-top" alt="Latte" />
+            <div class="card-body">
+              <h5 class="hot-bever-card-title">Latte</h5>
+              <h6 class="card-price">140 EGP</h6>
+              <p class="hot-bever-card-text">
+                Creamy espresso drink with steamed milk and light foam
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Mocha -->
+          <div class="card hot-bever-card hover-hot-bever-card">
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img src="images/Mocha.png" class="card-img-top" alt="Mocha" />
+            <div class="card-body">
+              <h5 class="hot-bever-card-title">Mocha</h5>
+              <h6 class="card-price">150 EGP</h6>
+              <p class="hot-bever-card-text">
+                Espresso blended with chocolate and steamed milk
+              </p>
+              <a href="#mocha" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Hot Chocolate -->
+          <div class="card hot-bever-card hover-hot-bever-card">
+            <span class="badge bg-on-sale">SALE</span>
+            <img
+              src="images/hot chocolate.png"
+              class="card-img-top"
+              alt="Hot Chocolate"
+            />
+            <div class="card-body">
+              <h5 class="hot-bever-card-title">Hot Chocolate</h5>
+              <del>150 EGP</del>
+              <h6 class="card-price">120 EGP</h6>
+              <p class="hot-bever-card-text">
+                Rich hot chocolate made with premium cocoa and milk
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Marshmallow Hot Chocolate -->
+          <div class="card hot-bever-card hover-hot-bever-card">
+            <span class="badge bg-New">NEW</span>
+            <img
+              src="images/marshmallow hot chocolate.png"
+              class="card-img-top"
+              alt="Marshmallow Hot Chocolate"
+            />
+            <div class="card-body">
+              <h5 class="hot-bever-card-title">Marshmallow H Chocolate</h5>
+              <h6 class="card-price">200 EGP</h6>
+              <p class="hot-bever-card-text">
+                Rich hot chocolate topped with soft marshmallow for a sweet and
+                cozy treat
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cold beverage options -->
+    <section class="cold-bever">
+      <div class="container" id="Cold Beverages">
+        <h2>Cold Beverages ❄️</h2>
+
+        <div class="cold-bever-container">
+          <!-- Product card: Iced Latte -->
+          <div class="card cold-bever-card hover-cold-bever-card">
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img
+              src="images/iced latte.png"
+              class="card-img-top"
+              alt="Iced Latte"
+            />
+            <div class="card-body">
+              <h5 class="cold-bever-card-title">Iced Latte</h5>
+              <h6 class="card-price">120 EGP</h6>
+              <p class="cold-bever-card-text">
+                Chilled espresso mixed with cold milk over ice
+              </p>
+              <a href="#iced-latte" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Iced Americano -->
+          <div class="card cold-bever-card hover-cold-bever-card">
+            <img
+              src="images/iced Americano.png"
+              class="card-img-top"
+              alt="Iced Americano"
+            />
+            <div class="card-body">
+              <h5 class="cold-bever-card-title">Iced Americano</h5>
+              <h6 class="card-price">130 EGP</h6>
+              <p class="cold-bever-card-text">
+                Refreshing espresso served with cold water and ice
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Cold Brew -->
+          <div class="card cold-bever-card hover-cold-bever-card">
+            <img
+              src="images/cold brew.png"
+              class="card-img-top"
+              alt="Cold Brew"
+            />
+            <div class="card-body">
+              <h5 class="cold-bever-card-title">Cold Brew</h5>
+              <h6 class="card-price">140 EGP</h6>
+              <p class="cold-bever-card-text">
+                Slow-steeped coffee with a naturally smooth flavor
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Iced Mocha -->
+          <div class="card cold-bever-card hover-cold-bever-card">
+            <span class="badge bg-limited">LIMITED</span>
+            <img
+              src="images/iced mocha.png"
+              class="card-img-top"
+              alt="Iced Mocha"
+            />
+            <div class="card-body">
+              <h5 class="cold-bever-card-title">Iced Mocha</h5>
+              <h6 class="card-price">150 EGP</h6>
+              <p class="cold-bever-card-text">
+                Cold espresso blended with chocolate and fresh milk
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Vanilla Frappe -->
+          <div class="card cold-bever-card hover-cold-bever-card">
+            <span class="badge bg-New">NEW</span>
+            <img
+              src="images/vanilla frappe.png"
+              class="card-img-top"
+              alt="Vanilla Frappe"
+            />
+            <div class="card-body">
+              <h5 class="cold-bever-card-title">Vanilla Frappe</h5>
+              <h6 class="card-price">160 EGP</h6>
+              <p class="cold-bever-card-text">
+                Blended iced coffee with vanilla and whipped cream
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Caramel Iced Coffee -->
+          <div class="card cold-bever-card hover-cold-bever-card">
+            <span class="badge bg-on-sale">SALE</span>
+            <img
+              src="images/caramel iced coffee.png"
+              class="card-img-top"
+              alt="Caramel Iced Coffee"
+            />
+            <div class="card-body">
+              <h5 class="cold-bever-card-title">Caramel Iced Coffee</h5>
+              <del>200 EGP</del>
+              <h6 class="card-price">170 EGP</h6>
+              <p class="cold-bever-card-text">
+                Refreshing iced coffee finished with sweet caramel
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fresh bakery selection -->
+    <section class="fresh-bakery">
+      <div class="container" id="Fresh Bakery">
+        <h2>Fresh Bakery 🥐</h2>
+
+        <div class="fresh-bakery-container">
+          <!-- Product card: Butter Croissant -->
+          <div class="card fresh-bakery-card hover-fresh-bakery-card">
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img
+              src="images/butter croissant.png"
+              class="card-img-top"
+              alt="Butter Croissant"
+            />
+            <div class="card-body">
+              <h5 class="fresh-bakery-card-title">Butter Croissant</h5>
+              <h6 class="card-price">150 EGP</h6>
+              <p class="fresh-bakery-card-text">
+                Classic flaky French pastry baked fresh every morning
+              </p>
+              <a href="#butter-croissant" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Chocolate Croissant -->
+          <div class="card fresh-bakery-card hover-fresh-bakery-card">
+            <img
+              src="images/chocolate croissant.png"
+              class="card-img-top"
+              alt="Chocolate Croissant"
+            />
+            <div class="card-body">
+              <h5 class="fresh-bakery-card-title">Chocolate Croissant</h5>
+              <h6 class="card-price">130 EGP</h6>
+              <p class="fresh-bakery-card-text">
+                Buttery croissant filled with rich chocolate
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Cinnamon Roll -->
+          <div class="card fresh-bakery-card hover-fresh-bakery-card">
+            <span class="badge bg-New">NEW</span>
+            <img
+              src="images/cinnamon roll.png"
+              class="card-img-top"
+              alt="Cinnamon Roll"
+            />
+            <div class="card-body">
+              <h5 class="fresh-bakery-card-title">Cinnamon Roll</h5>
+              <h6 class="card-price">140 EGP</h6>
+              <p class="fresh-bakery-card-text">
+                Sweet rolled pastry topped with cream cheese icing
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Chocolate Cookie -->
+          <div class="card fresh-bakery-card hover-fresh-bakery-card">
+            <span class="badge bg-on-sale">SALE</span>
+            <img
+              src="images/chocolate cookie.png"
+              class="card-img-top"
+              alt="Chocolate Cookie"
+            />
+            <div class="card-body">
+              <h5 class="fresh-bakery-card-title">Chocolate Cookie</h5>
+              <del>150 EGP</del>
+              <h6 class="card-price">110 EGP</h6>
+              <p class="fresh-bakery-card-text">
+                Freshly baked cookie loaded with chocolate chips
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+          <!-- Product card: Bagel -->
+          <div class="card fresh-bakery-card hover-fresh-bakery-card">
+            <span class="badge bg-limited">LIMITED</span>
+            <img src="images/Bagel.png" class="card-img-top" alt="Bagel" />
+            <div class="card-body">
+              <h5 class="fresh-bakery-card-title">Bagel</h5>
+              <h6 class="card-price">100 EGP</h6>
+              <p class="fresh-bakery-card-text">
+                Soft and chewy bagel served fresh daily
+              </p>
+              <a href="#Best Sellers" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured best-selling items -->
+    <section class="best-sellers" id="Best Sellers">
+      <div class="container">
+        <h2>Best Sellers 🎖️</h2>
+
+        <div class="best-sellers-container">
+          <!-- Spotlight item: Caramel Velvet Coffee -->
+          <!-- Featured spotlight -->
+          <div
+            class="spotlight best-sellers-spotlight hover-best-sellers-spotlight"
+            id="caramel-velvet"
+          >
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img
+              src="images/caramel(1).png"
+              class="spotlight-img-top"
+              alt="Caramel Velvet Coffee"
+            />
+            <div class="spotlight-body">
+              <h5 class="best-sellers-spotlight-title">
+                Caramel Velvet Coffee
+              </h5>
+              <h6 class="spotlight-price">140 EGP</h6>
+              <p class="best-sellers-spotlight-text">
+                A luxurious coffee crafted with rich espresso, creamy steamed
+                milk, and smooth caramel syrup. Finished with a silky layer of
+                foam and a delicate caramel drizzle, it delivers the perfect
+                balance of sweetness and bold coffee flavor in every sip
+              </p>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          </div>
+          <!-- Spotlight item: Mocha -->
+          <!-- Featured spotlight -->
+          <div
+            class="spotlight best-sellers-spotlight hover-best-sellers-spotlight"
+            id="mocha"
+          >
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img
+              src="images/Mocha(1).png"
+              class="spotlight-img-top"
+              alt="Mocha"
+            />
+            <div class="spotlight-body">
+              <h5 class="best-sellers-spotlight-title">Mocha</h5>
+              <h6 class="spotlight-price">150 EGP</h6>
+              <p class="best-sellers-spotlight-text">
+                A delightful combination of premium espresso, velvety steamed
+                milk, and rich chocolate. Mocha offers a smooth, indulgent taste
+                with the perfect harmony of coffee and cocoa, making it a
+                favorite for chocolate and coffee lovers alike
+              </p>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          </div>
+          <!-- Spotlight item: Iced Latte -->
+          <!-- Featured spotlight -->
+          <div
+            class="spotlight best-sellers-spotlight hover-best-sellers-spotlight"
+            id="iced-latte"
+          >
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img
+              src="images/iced latte(1).png"
+              class="spotlight-img-top"
+              alt="Iced Latte"
+            />
+            <div class="spotlight-body">
+              <h5 class="best-sellers-spotlight-title">Iced Latte</h5>
+              <h6 class="spotlight-price">120 EGP</h6>
+              <p class="best-sellers-spotlight-text">
+                A refreshing blend of freshly brewed espresso, chilled milk, and
+                crystal-clear ice. Smooth, creamy, and perfectly balanced, the
+                Iced Latte provides a cool and energizing coffee experience
+                that's ideal for any time of the day
+              </p>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          </div>
+          <!-- Spotlight item: Butter Croissant -->
+          <div
+            class="spotlight best-sellers-spotlight hover-best-sellers-spotlight"
+            id="butter-croissant"
+          >
+            <span class="badge bg-best-sellers">BEST SELLER</span>
+            <img
+              src="images/butter croissant(1).png"
+              class="spotlight-img-top"
+              alt="Butter Croissant"
+            />
+            <div class="spotlight-body">
+              <h5 class="best-sellers-spotlight-title">Butter Croissant</h5>
+              <h6 class="spotlight-price">150 EGP</h6>
+              <p class="best-sellers-spotlight-text">
+                A classic French pastry baked to golden perfection with
+                delicate, flaky layers and a rich buttery flavor. Light, crisp
+                on the outside, and soft inside, it's the perfect companion to a
+                freshly brewed cup of coffee
+              </p>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Customer testimonials -->
+    <section class="reviews">
+      <div class="container" id="Customer Reviews">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-container">
+          <!-- Card 1 -->
+          <div
+            class="card shadow-sm rounded-4 p-3 reviews-card hover-reviews-card"
+          >
+            <div class="text-center">
+              <h5 class="reviews-card-title">Sarah Mitchell</h5>
+              <p class="reviews-card-text">
+                "The Caramel Velvet Coffee is absolutely amazing! Rich flavor,
+                smooth texture, and one of the best coffees I've ever tasted."
+              </p>
+              <div class="container bi-container">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+
+              <p class="customer-text">- Coffee Enthusiast</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card shadow-sm rounded-4 p-3 reviews-card hover-reviews-card"
+          >
+            <div class="text-center">
+              <h5 class="reviews-card-title">Daniel Carter</h5>
+              <p class="reviews-card-text">
+                "Every visit to Cup Mart feels special. The coffee is
+                consistently delicious, and the freshly baked pastries make the
+                perfect combination."
+              </p>
+              <div class="container bi-container">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="customer-text">- Regular Customer</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card shadow-sm rounded-4 p-3 reviews-card hover-reviews-card"
+          >
+            <div class="text-center">
+              <h5 class="reviews-card-title">Emily Roberts</h5>
+              <p class="reviews-card-text">
+                "Beautiful atmosphere, premium-quality drinks, and friendly
+                service. The Vanilla Dream Latte has become my favorite coffee."
+              </p>
+              <div class="container bi-container">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <p class="customer-text">- Coffee Lover</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer with contact details and form -->
+    <footer class="footer">
+      <div class="container footer-container" id="Contact Us">
+        <div class="row">
+          <h2>Contact Us</h2>
+
+          <div class="col-md-4">
+            <p>
+              <strong>📍 Address:</strong><br />
+              25 Coffee Street, Downtown, Cairo, Egypt
+            </p>
+
+            <p>
+              <strong>📧 Email:</strong><br />
+              info@cupmart.com
+            </p>
+
+            <p>
+              <strong>📞 Phone:</strong><br />
+              +20 123 456 7890
+            </p>
+
+            <p>
+              <strong>🕒 Opening Hours:</strong><br />
+              Monday – Friday: 8:00 AM – 10:00 PM<br />
+              Saturday – Sunday: 9:00 AM – 11:00 PM
+            </p>
+
+            <p>
+              <strong>☕ Customer Support:</strong><br />
+              We're happy to answer your questions and help with your orders.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-md-4">
+            <h5>Get In Touch</h5>
+            <form>
+              <div class="container_Form">
+                <div class="container">
+                  <label for="Name_Input">Your Name :</label>
+                  <input
+                    required
+                    class="Fill_Input"
+                    type="text"
+                    name="user name"
+                    type="text"
+                    id="Name_Input"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+
+                <div class="container">
+                  <label for="Email_Input">Your Email :</label>
+                  <input
+                    required
+                    class="Fill_Input"
+                    type="email"
+                    name="user email"
+                    type="email"
+                    id="Email_Input"
+                    placeholder="Enter Your Email"
+                  />
+                </div>
+                <div class="container">
+                  <label for="Message_Input">Your Message :</label>
+                  <textarea
+                    required
+                    class="Fill_Input"
+                    name="user message"
+                    id="Message_Input"
+                    placeholder="Enter Your Message"
+                  ></textarea>
+                </div>
+
+                <a href="#" class="button">Send Message</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="rights">&copy; 2026 Saif El-Deen. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
